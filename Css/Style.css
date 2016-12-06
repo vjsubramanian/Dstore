@@ -45,7 +45,18 @@ html, body{
    .container {
      width: 750px;
    }
- }
+    
+   }
+
+/*Assignment#30*/
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1170px;
+  } 
+}
+
+
  @media (min-width: 992px) {
    .container {
      width: 970px;
@@ -106,12 +117,12 @@ header .hero {
    position: relative;
  }
  header .hero h1 {
-   font-size:48px;
+   font-size:68px;
    font-weight: normal;
    margin:95px 0 0;
  }
  header .hero p {
-   font-size: 22px;
+   font-size: 32px;
    line-height: 26px;
    font-weight: 100;
    margin:10px 0 40px;
