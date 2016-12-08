@@ -34,7 +34,7 @@ html, body{
  .container:after {
    clear: both;
  }
-
+/*ccheckpoint#32*/
 .container .one-half {
     width: 46%;
 }
@@ -131,6 +131,7 @@ header .hero {
  header .hero img {
    display: block;
    margin:3em auto 0;
+     /*ccheckpoint#32*/
     height: auto; 
     width: auto; 
     max-width: 500px; 
@@ -366,7 +367,7 @@ header .hero {
    background:#F7F7F7;
  }
  .left-nav {
-   height: 10 0vh;
+   height: 100vh;
    width:14.66666667%;
    color:#FFFFFF;
    background: #34495E;
@@ -388,8 +389,8 @@ header .hero {
    font-weight: 600;
    text-transform: uppercase;
    font-size: 12px;
-   color: #E2E2E2;
-   line-height: 15px;
+   color: #FFFFFF;
+   line-height: 30px;
  }
  .left-nav .items ul {
    margin:0 0 40px;
@@ -409,6 +410,21 @@ header .hero {
    text-align: center;
    margin-right:8px;
  }
+/*Assignment#34*/
+
+
+ .left-nav ul li a:hover {
+    color: lawngreen;
+    
+}
+
+  .left-nav ul li a:active {
+    color: red;
+     
+    
+}
+
+
 /* LEFT NAVBAR SETTINGS */
  .left-nav .settings {
    position:absolute;
