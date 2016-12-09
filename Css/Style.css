@@ -34,7 +34,7 @@ html, body{
  .container:after {
    clear: both;
  }
-/*ccheckpoint#32*/
+/*checkpoint#32*/
 .container .one-half {
     width: 46%;
 }
@@ -418,9 +418,22 @@ header .hero {
     
 }
 
-  .left-nav ul li a:active {
-    color: red;
-     
+    .left-nav .items ul li.active {
+       color: #FFFFFF;
+       background-color: lightgrey;
+       height: 16px;
+       width:107%;
+       bottom:0;
+       left:0;
+       right:;
+       padding:10px 0px;
+       
+        
+} 
+
+.left-nav .active {
+    
+   
     
 }
 
@@ -574,3 +587,5 @@ header .hero {
    line-height: 18px;
    margin:5px 0 0;
  }
+
+/*dropit*/
