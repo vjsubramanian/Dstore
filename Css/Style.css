@@ -368,7 +368,7 @@ header .hero {
  }
  .left-nav {
    height: 100%;
-   width:280;
+   width: 280px;
   
    position: absolute;
      
@@ -427,10 +427,7 @@ header .hero {
      -moz-transform: translate(0,0); /** Firefox **/
    }
     
-   .hamburger {
-     display:none;
-   }
- }
+   
    .left-nav.open {
      width:14.66666667%;
      transform: translate(0,0);
@@ -438,8 +435,11 @@ header .hero {
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
    }
-  
-
+    
+  .hamburger {
+     display:none;
+   }
+}
  .left-nav .logo {
    padding:20px 0;
    background:#34495E;
@@ -494,12 +494,6 @@ header .hero {
        
         
 } 
-
-.left-nav .active {
-    
-   
-    
-}
 
 
 /* LEFT NAVBAR SETTINGS */
@@ -686,6 +680,7 @@ header .hero {
    border-radius: 4px;
     margin-top: 20px;
   margin-right: 20px;
+    left: -40px;
 }
  
 .dropit .dropit-open .dropit-submenu:after {
@@ -698,7 +693,7 @@ header .hero {
   width: 0px;
   z-index: 1;
   top:-8px;
-right: 10px;
+  right: 10px;
     
  }
 .dropit .dropit-open .dropit-submenu li {
@@ -721,20 +716,104 @@ right: 10px;
  }
 
 /*menu-setting*/
-.menu-setting .dropit {
+.dropit {
   list-style: none;
   padding: 0;
-  margin: 16px 0 0;
-  
+  margin: 15px 0 0;
+  float: right;
   display:inline-block;
 }
-.menu-setting .dropit-submenu {
-  position: absolute;
-  
-  float: left;
-  z-index: 1000;
-  display: none; 
-  min-width: 100px;
-    list-style: none;
+.dropit .dropit-trigger {
+    position: relative;
 }
-  
+ .dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+   left: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 100px;
+    list-style: none;
+	padding: 10px;
+	margin: 20px 0 0;
+     
+}
+ .dropit-inverse.dropit .dropit-submenu {
+    position: absolute;
+    top: -135px;
+   left: -120px; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 120px;
+    list-style: none;
+    padding: -10px;
+    margin: 20px 0 0;
+     
+     
+}
+
+.dropit .dropit-open .dropit-submenu { 
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 24x;
+}
+ .dropit-inverse.dropit .dropit-open .dropit-submenu { 
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+}
+ .dropit .dropit-open .dropit-submenu:after {
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -8px;
+    right: 10px;
+}
+ .dropit-inverse.dropit .dropit-open .dropit-submenu:after {
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: 100%;
+  right: 0px;
+    transform: rotate(180deg);
+     
+}
+ .dropit .dropit-open .dropit-submenu li {
+    display: block;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+
+    
+   .dropit .dropit-open .dropit-submenu li:last-child {
+    margin-bottom: 10px;
+}
+  .dropit .dropit-open .dropit-submenu li a {
+    color:#34495E;
+    text-decoration: none;
+    font-family: "lato", Helvetica, Arial, sans-serif;
+    font-weight:100;
+    
+}
+
+
+ .dropit-inverse.dropit .dropit-open .dropit-submenu li a {
+    
+     padding-bottom: 10px;
+    
+}
