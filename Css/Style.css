@@ -481,8 +481,7 @@ header .hero {
     color: lawngreen;
     
 }
-
-    .left-nav .items ul li.active {
+ .left-nav .items ul li.active {
        color: #FFFFFF;
        background-color: lightgrey;
        height: 16px;
@@ -491,13 +490,9 @@ header .hero {
        left:0;
        right:;
        padding:10px 0px;
-       
-        
 } 
 
-
 /* LEFT NAVBAR SETTINGS */
-
 
  .left-nav .settings {
    position:absolute;
@@ -584,6 +579,7 @@ header .hero {
    }
  }
 /* Tablets */
+
  @media (min-width:768px) {
    .content {
      padding:1.5em 5%;
@@ -705,9 +701,7 @@ header .hero {
  }
  .dropit .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 10px;
-     
-     
- }
+}
  .dropit .dropit-open .dropit-submenu li a {
   color:#34495E;
   text-decoration: none;
@@ -748,7 +742,6 @@ header .hero {
     list-style: none;
     padding: -10px;
     margin: 20px 0 0;
-     
      
 }
 
@@ -793,13 +786,8 @@ header .hero {
  .dropit .dropit-open .dropit-submenu li {
     display: block;
     margin-bottom: 20px;
-    
-    
 }
 
-
-
-    
    .dropit .dropit-open .dropit-submenu li:last-child {
     margin-bottom: 10px;
 }
@@ -810,9 +798,7 @@ header .hero {
     font-weight:100;
     
 }
-
-
- .dropit-inverse.dropit .dropit-open .dropit-submenu li a {
+   .dropit-inverse.dropit .dropit-open .dropit-submenu li a {
     
      padding-bottom: 10px;
     
